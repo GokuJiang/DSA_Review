@@ -6,7 +6,11 @@
 #define XINNUOTEST_BINARYTREE_H
 
 #include <iostream>
+#include <stdio.h>
 #include "release.h"
+#include "Stack.h"
+#include "Queue.h"
+
 using namespace std;
 
 #define BinNodePosi(T) BinNode<T>*  //节点位置
@@ -27,7 +31,28 @@ using namespace std;
 
 
 typedef enum {RB_RED,RB_BLACK} RBColor;
+template <typename T, typename VST>
+void travPre_R(BinNodePosi(T) x, VST& visit){
+    if(!x) return;
+    visit(x->data);
+    travPre_R(x->lc,visit);
+    travPre_R(x->rc,visit);
+};
+template <typename T, typename VST>
+void travPost_R (BinNodePosi(T) x, VST& visit){
+    if(!x) return;
+    travPost_R(x->lc,visit);
+    travPost_R(x->rc,visit);
+    visit(x->data);
+};
 
+template <typename T, typename VST>
+void travIn_R (BinNodePosi(T) x, VST& visit){
+    if(!x) return;
+    travIn_R(x->lc,visit);
+    visit(x->data);
+    travIn_R(x->rc,visit);
+};
 template <typename T>
 struct BinNode {
     T data;
@@ -49,20 +74,16 @@ struct BinNode {
     int size();
 
     BinNodePosi(T)insertAsLC(T const &);
-
     BinNodePosi(T)insertAsRC(T const &);
 
     BinNodePosi(T)succ();
 
     template<typename VST>
     void travLevel(VST &);
-
     template<typename VST>
     void travPre(VST &);
-
     template<typename VST>
     void travIn(VST &);
-
     template<typename VST>
     void travPost(VST &);
 
@@ -86,13 +107,16 @@ BinNodePosi(T) BinNode<T>::insertAsRC(T const& e) {
 
 template <typename T>
 BinNodePosi(T) BinNode<T>::succ() {
-
+    BinNodePosi(T) s = this;
+    if(rc){
+        s = rc;
+        while(HasLChild(*s)) s = s->lc;
+    }else{
+        while(IsRChild(*s)) s = s->parent;
+    }
+    return s;
 }
 
-template <typename T> template <typename VST>
-void BinNode<T>::travIn(VST& vist) {
-
-}
 
 template <typename T>
 class BinTree{
@@ -237,38 +261,129 @@ BinTree<T>* BinTree<T>::secede(BinNode<T> *x) {
     _size -= S->_size;
     return S;
 }
-template <typename T, typename VST>
-void travPre_R(BinNodePosi(T) x, VST& visit){
-    if(!x) return;
-    visit(x->data);
-    travPre_R(x->lc,visit);
-    travPre_R(x->rc,visit);
-};
-template <typename T, typename VST>
-void travPost_R (BinNodePosi(T) x, VST& visit){
-   if(!x) return;
-    travPost_R(x->lc,visit);
-    travPost_R(x->rc,visit);
-    visit(x->data);
-};
+
+//迭代版 先序遍历
+template <typename T,typename VST>
+static void visitAlongLeftBranch(BinNodePosi(T)x, VST& visit,Stack<BinNodePosi(T)>& S){
+    while (x){
+        visit(x);
+        S.push(x->rc);
+        x = x->lc;
+    }
+}
+template <typename T,typename VST>
+void travPre_I2(BinNodePosi(T) x,VST& visit){
+    Stack<BinNodePosi(T)>S;
+    while (true){
+        visitAlongLeftBranch(x,visit,S);
+        if(S.empty())break;
+        x = S.pop();
+    }
+}
+
+//迭代版中序遍历
+template <typename T>
+static void goAlongLeftBranch(BinNodePosi(T)x,Stack<BinNodePosi(T)>&S){
+    while (x){
+        S.push(x);
+        x = x->lc;
+    }
+}
+template <typename T,typename VST>
+void travIn_I1(BinNodePosi(T) x, VST& visit){
+    Stack<BinNodePosi(T)> S;
+    while  (true){
+        goAlongLeftBranch(x,S);
+        if(S.empty()) break;
+
+        x = S.pop();
+        visit(x->data);
+        x = x->rc;
+    }
+}
+template <typename T,typename VST>
+void travIn_I2(BinNodePosi(T)x,VST& visit){
+    Stack<BinNodePosi(T)>S;
+    while(true){
+        if (x){
+            S.push(x);
+            x = x->lc;
+        }
+        else if(!S.empty()) {
+            x = S.pop();
+            visit(x->data);
+            x=x->rc;
+        }
+        else
+            break;
+    }
+}
+template <typename T,typename VST>
+void travIn_I3(BinNodePosi(T)x,VST& visit){
+    bool backtrack = false;
+    while(true){
+        if(!backtrack&&HasLChild(*x))
+            x = x->lc;
+        else {
+            visit(x->data);
+            if(HasRChild(*x)){
+                x = x->rc;
+                backtrack = false;
+            } else{
+                if (!(x = x->succ())) break;
+                backtrack = true;
+            }
+        }
+    }
+}
+
+template <typename T> template <typename VST>
+void BinNode<T>::travIn(VST& vist) {
+    switch (1){
+        case 1: travIn_I1(this,vist);break;
+        case 2: travIn_I2(this,vist);break;
+        case 3: travIn_I3(this,vist);break;
+        default:travIn_R(this,vist);break;
+    }
+}
+
+//后序遍历
+template <typename T>
+static void gotoHLVFL(Stack<BinNodePosi(T)>& S){
+    while (BinNodePosi(T) x = S.top()){
+        if (HasLChild(*x)){
+            if(HasRChild(*x)) {
+                S.push(x->rc);
+            }
+            S.push(x->lc);
+        }
+    }
+    S.pop();
+}
 
 template <typename T, typename VST>
-void travIn_R (BinNodePosi(T) x, VST& visit){
-    if(!x) return;
-    travIn_R(x->lc,visit);
-    visit(x->data);
-    travIn_R(x->rc,visit);
-};
-//template <typename T>
-//template <typename T>
-//template <typename T>
-//template <typename T>
-//template <typename T>
+void travPost_I(BinNodePosi(T) x, VST& visit){
+    Stack<BinNodePosi(T)>S;
+    if(x) S.push(x);
+    while(!S.empty()){
+        if(S.top()!=x->parent)
+            gotoHLVFL(S);
+        x = S.pop();
+        visit(x->data);
+    }
+}
 
-
-
-
-
-
+//层次遍历
+template <typename T,typename VST>
+void BinNode<T>::travLevel(VST& visit) {
+    Queue<BinNodePosi(T)>Q;
+    Q.enqueue(this);
+    while(!Q.empty()){
+        BinNodePosi(T) x= Q.dequeue();
+        visit(x->data);
+        if(HasLChild(*x)) Q.enqueue(x->lc);
+        if(HasRChild(*x)) Q.enqueue(x->rc);
+    }
+}
 
 #endif //XINNUOTEST_BINARYTREE_H

@@ -13,8 +13,9 @@ int main() {
     int testData[15] = {12,45,23,87,56,23,134,93,4,98,33,44,6,2,56};
     BinTree<int>Bin;
     Bin.insertAtRoot(testData[0]);
-
+    Bin.insertAtLC(Bin.root(),testData[1]);
     cout<<Bin.root()->data<<endl;
+    cout<<Bin.root()->lc->data<<endl;
 //    BinTree<int>* BinLeft;
 //    Bin.attachLC(Bin.root(),BinLeft);
     //List Test
