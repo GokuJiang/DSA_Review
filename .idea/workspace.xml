@@ -35,7 +35,17 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64eaabba-b504-4b11-a12a-21df4d416b06" name="Default" comment="" />
+    <list default="true" id="64eaabba-b504-4b11-a12a-21df4d416b06" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AVL.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BST.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BTNode.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BTree.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Entry.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Splay.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DSA_Review.iml" afterPath="$PROJECT_DIR$/.idea/DSA_Review.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+    </list>
     <ignored path="DSA_Review.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,13 +77,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BinaryTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8191304">
+            <state vertical-scroll-proportion="0.0">
               <caret line="384" column="43" selection-start-line="384" selection-start-column="43" selection-end-line="384" selection-end-column="43" />
               <folding>
-                <element signature="e#101#120#0" expanded="true" />
                 <element signature="e#1542#1554#0" expanded="true" />
                 <element signature="e#2569#2581#0" expanded="true" />
                 <element signature="e#4910#4922#0" expanded="true" />
@@ -86,6 +95,106 @@
                 <element signature="e#8439#8451#0" expanded="true" />
                 <element signature="e#8714#8740#0" expanded="true" />
                 <element signature="e#8987#9012#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entry.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Entry.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+              <folding>
+                <element signature="e#99#122#0" expanded="true" />
+                <marker date="1452063559000" expanded="true" signature="456:492" placeholder="{...}" />
+                <marker date="1452063559000" expanded="true" signature="529:565" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BST.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BST.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+              <folding>
+                <element signature="e#121#133#0" expanded="true" />
+                <element signature="e#554#566#0" expanded="true" />
+                <element signature="e#789#801#0" expanded="true" />
+                <element signature="e#899#911#0" expanded="true" />
+                <element signature="e#1110#1122#0" expanded="true" />
+                <element signature="e#1650#1662#0" expanded="true" />
+                <element signature="e#1849#1861#0" expanded="true" />
+                <element signature="e#2299#2311#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Splay.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Splay.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+              <folding>
+                <element signature="e#116#128#0" expanded="true" />
+                <element signature="e#342#361#0" expanded="true" />
+                <element signature="e#470#489#0" expanded="true" />
+                <element signature="e#598#610#0" expanded="true" />
+                <element signature="e#2190#2202#0" expanded="true" />
+                <element signature="e#2363#2375#0" expanded="true" />
+                <element signature="e#3067#3079#0" expanded="true" />
+                <marker date="1452164747000" expanded="true" signature="154:330" placeholder="{...}" />
+                <marker date="1452164747000" expanded="true" signature="2420:3057" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BTNode.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BTNode.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+              <folding>
+                <element signature="e#155#167#0" expanded="true" />
+                <marker date="1452164993000" expanded="true" signature="181:581" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BTree.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BTree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.83235294">
+              <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+              <folding>
+                <element signature="e#91#110#0" expanded="true" />
+                <element signature="e#142#154#0" expanded="true" />
+                <element signature="e#832#844#0" expanded="true" />
+                <element signature="e#1111#1123#0" expanded="true" />
+                <element signature="e#1380#1392#0" expanded="true" />
+                <element signature="e#2138#2150#0" expanded="true" />
+                <element signature="e#2562#2574#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AVL.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVL.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+              <folding>
+                <element signature="e#111#123#0" expanded="true" />
+                <element signature="e#607#619#0" expanded="true" />
+                <element signature="e#1059#1071#0" expanded="true" />
+                <marker date="1452160684000" expanded="true" signature="148:227" placeholder="{...}" />
+                <marker date="1452160684000" expanded="true" signature="1104:1412" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -114,6 +223,12 @@
       <list>
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/BinaryTree.h" />
+        <option value="$PROJECT_DIR$/Entry.h" />
+        <option value="$PROJECT_DIR$/AVL.h" />
+        <option value="$PROJECT_DIR$/BST.h" />
+        <option value="$PROJECT_DIR$/Splay.h" />
+        <option value="$PROJECT_DIR$/BTNode.h" />
+        <option value="$PROJECT_DIR$/BTree.h" />
       </list>
     </option>
   </component>
@@ -123,10 +238,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -196,6 +310,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1069" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RunManager" selected="Application.xinnuoTest">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" TEST_MODE="SUITE_TEST">
@@ -284,29 +399,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="0" y="23" width="1440" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18240343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30972517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -317,6 +432,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1542#1554#0" expanded="true" />
+            <element signature="e#2569#2581#0" expanded="true" />
+            <element signature="e#4910#4922#0" expanded="true" />
+            <element signature="e#6486#6511#0" expanded="true" />
+            <element signature="e#6692#6717#0" expanded="true" />
+            <element signature="e#6928#6940#0" expanded="true" />
+            <element signature="e#7083#7108#0" expanded="true" />
+            <element signature="e#7346#7371#0" expanded="true" />
+            <element signature="e#7696#7721#0" expanded="true" />
+            <element signature="e#8439#8451#0" expanded="true" />
+            <element signature="e#8714#8740#0" expanded="true" />
+            <element signature="e#8987#9012#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -353,12 +507,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Entry.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+            <marker date="1452063559000" expanded="true" signature="456:492" placeholder="{...}" />
+            <marker date="1452063559000" expanded="true" signature="529:565" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BinaryTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8191304">
+        <state vertical-scroll-proportion="0.0">
           <caret line="384" column="43" selection-start-line="384" selection-start-column="43" selection-end-line="384" selection-end-column="43" />
           <folding>
-            <element signature="e#101#120#0" expanded="true" />
             <element signature="e#1542#1554#0" expanded="true" />
             <element signature="e#2569#2581#0" expanded="true" />
             <element signature="e#4910#4922#0" expanded="true" />
@@ -371,6 +536,82 @@
             <element signature="e#8439#8451#0" expanded="true" />
             <element signature="e#8714#8740#0" expanded="true" />
             <element signature="e#8987#9012#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVL.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="e#111#123#0" expanded="true" />
+            <element signature="e#607#619#0" expanded="true" />
+            <element signature="e#1059#1071#0" expanded="true" />
+            <marker date="1452160684000" expanded="true" signature="148:227" placeholder="{...}" />
+            <marker date="1452160684000" expanded="true" signature="1104:1412" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+          <folding>
+            <element signature="e#121#133#0" expanded="true" />
+            <element signature="e#554#566#0" expanded="true" />
+            <element signature="e#789#801#0" expanded="true" />
+            <element signature="e#899#911#0" expanded="true" />
+            <element signature="e#1110#1122#0" expanded="true" />
+            <element signature="e#1650#1662#0" expanded="true" />
+            <element signature="e#1849#1861#0" expanded="true" />
+            <element signature="e#2299#2311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Splay.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#128#0" expanded="true" />
+            <element signature="e#342#361#0" expanded="true" />
+            <element signature="e#470#489#0" expanded="true" />
+            <element signature="e#598#610#0" expanded="true" />
+            <element signature="e#2190#2202#0" expanded="true" />
+            <element signature="e#2363#2375#0" expanded="true" />
+            <element signature="e#3067#3079#0" expanded="true" />
+            <marker date="1452164747000" expanded="true" signature="154:330" placeholder="{...}" />
+            <marker date="1452164747000" expanded="true" signature="2420:3057" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BTNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          <folding>
+            <element signature="e#155#167#0" expanded="true" />
+            <marker date="1452164993000" expanded="true" signature="181:581" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83235294">
+          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <folding>
+            <element signature="e#91#110#0" expanded="true" />
+            <element signature="e#142#154#0" expanded="true" />
+            <element signature="e#832#844#0" expanded="true" />
+            <element signature="e#1111#1123#0" expanded="true" />
+            <element signature="e#1380#1392#0" expanded="true" />
+            <element signature="e#2138#2150#0" expanded="true" />
+            <element signature="e#2562#2574#0" expanded="true" />
           </folding>
         </state>
       </provider>
